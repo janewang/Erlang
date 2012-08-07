@@ -6,12 +6,12 @@
 -record(cat, {name, color=green, description}).  
 
 %%% Client API
-start_link() -> spawn_link(fun init/0).  
+start_link() -> spawn(fun init/0).  
 
 %% Synchronous call
 order_cat(Pid, Name, Color, Description) ->           
-    Ref = erlang:monitor(process, Pid),               % monitor is a built in function for erlang that create a monitor by passing a process Id, another process is created to monitor this process. If the process exist, a DOWN message is sent
-                                                      % to the monitor which can then be handled or throw an error. Each process has BIF that can call it such as put(key, value), get(key), get(), get_keys(value), erase(key), erase()
+    Ref = erlang:monitor(process, Pid),               % monitor is a built in function for erlang that create a monitor by passing a process Id. Another process is created to monitor this process. If the process exits, a DOWN message is sent
+                                                      % to the monitor which can then be handled or throw an error. Each process has BIFs to use with, such as put(key, value), get(key), get(), get_keys(value), erase(key), erase().
     Pid ! {self(), Ref, {order, Name, Color, Description}},  
     receive
         {Ref, Cat} ->                                            
