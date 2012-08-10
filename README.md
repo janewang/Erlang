@@ -3,6 +3,27 @@ Erlang
 
 ### Why Erlang?
 
-Some languages are extremely good at something. Others are mediocre at everything. Erlang holds its own among those languages that are extremely good at something. That said, let's roll with the good, the bad, and the ugly of everything in Erlang.
+- Shorter Code and Possibly Clearer Code
+- Stability Under Heavy Load
+- Understand message queues and selective receives vs. callbacks and context switching
+- Understand concurrency models
+
+"Concurrency in Erlang is fundamental to its success. Rather than providing threads that share memory, each Erlang process executes in its own memory space and owns its own heap and stack. Processes can’t interfere with each other inadvertently, as is all too easy in threading models, leading to deadlocks and other horrors."
+
 
 ![OTP png](https://github.com/janewang/erlang/raw/master/erlang.png)
+
+#### Kitty Server
+Creation of Processes
+
+#### PingPong
+Erlang systems passing messages in the form of ping pong
+
+#### Messenger
+Multiple Erlang Nodes passing messages
+
+#### MyApp
+OTP with Eunit Setup
+
+#### Cowboy Examples
+Working with Cowboy
