@@ -1,8 +1,7 @@
 Erlang
 ======
 
-### Why Erlang?
-
+## Why Erlang?
 - Shorter Code and Possibly Clearer Code
 - Stability Under Heavy Load
 - Understand message queues and selective receives vs. callbacks and context switching
@@ -13,17 +12,15 @@ Erlang
 
 ![OTP png](https://github.com/janewang/erlang/raw/master/erlang.png)
 
-#### Kitty Server
-Creation of Processes
 
-#### PingPong
-Erlang systems passing messages in the form of ping pong
+##Applications
 
-#### Messenger
-Multiple Erlang Nodes passing messages
+#### Kitty Server - Erlang Processes
 
-#### MyApp
-OTP with Eunit Setup
+#### PingPong - Erlang systems passing messages in the form of ping pong
 
-#### Cowboy Examples
-Working with Cowboy
+#### Messenger - Multiple Erlang Nodes passing messages
+
+#### MyApp - OTP with Eunit Setup
+
+#### Cowboy Examples - How to Use Cowboy
