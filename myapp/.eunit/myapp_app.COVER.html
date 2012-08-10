@@ -1,0 +1,39 @@
+<html>
+<head><title>.eunit/myapp_app.COVER.html</title></head><body bgcolor=white text=black>
+<pre>
+File generated from /Users/janewang/Sites/erlang/otp/myapp/.eunit/myapp_app.erl by COVER 2012-08-10 at 17:38:20
+
+****************************************************************************
+
+        |  -module(myapp_app).
+        |  
+        |  -behaviour(application).
+        |  
+        |  %% Application callbacks
+        |  -export([start/2, stop/1]).
+        |  
+        |  % eunit
+        |  -ifdef(TEST).
+        |  -include_lib("eunit/include/eunit.hrl").
+        |  -endif.
+        |  
+        |  %% ===================================================================
+        |  %% Application callbacks
+        |  %% ===================================================================
+        |  
+        |  start(_StartType, _StartArgs) -&gt;
+     1..|      myapp_sup:start_link().
+        |  
+        |  stop(_State) -&gt;
+<font color=red>     0..|      ok.</font>
+        |  
+        |  % eunit
+        |  -ifdef(TEST).
+        |  
+        |  simple_test() -&gt;
+     1..|      ok = application:start(myapp),
+     1..|      ?assertNot(undefined == whereis(myapp_sup)).
+        |  
+        |  -endif.</pre>
+</body>
+</html>
