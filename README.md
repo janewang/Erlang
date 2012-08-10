@@ -19,5 +19,5 @@ Erlang
 - PingPong - Erlang systems passing messages in the form of ping pong
 - Messenger - Multiple Erlang Nodes passing messages
 - MyApp - OTP with Eunit Setup
-- Testing Rebar - Hmmm
+- Testing Rebar - Standard rebar setup
 - Cowboy Examples - How to Use Cowboy

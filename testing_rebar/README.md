@@ -56,4 +56,5 @@ starts in the shell
 
 Eshell > `registered().`
 
+See this gist for the same instructions above: https://gist.github.com/3317595
 Slight update to this setup: http://skeptomai.com/?p=56 due to version difference.
