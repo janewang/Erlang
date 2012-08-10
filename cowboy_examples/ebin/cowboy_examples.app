@@ -1,0 +1,10 @@
+{application,cowboy_examples,
+             [{description,"Examples for cowboy."},
+              {vsn,"0.1.0"},
+              {modules,[cowboy_examples,cowboy_examples_sup,default_handler,
+                        eventsource_emitter,eventsource_handler,
+                        websocket_handler]},
+              {registered,[cowboy_examples_sup]},
+              {applications,[kernel,stdlib,crypto,public_key,ssl,cowboy]},
+              {mod,{cowboy_examples,[]}},
+              {env,[]}]}.
