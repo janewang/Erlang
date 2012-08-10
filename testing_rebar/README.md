@@ -28,7 +28,7 @@ Compiled src/myapp_sup.erl
 `mkdir rel`
 `cd rel`
 `rebar create-node`
-Note: or use: `rebar create-node nodeid=myapp`
+Note: or 2nd option: `rebar create-node nodeid=myapp`
 console output:
 ==> rel (create-node)
 Writing reltool.config
@@ -52,6 +52,7 @@ console output:
 ==> rel (generate)
 
 `rel/mynode/bin/mynode console`
+2nd option: `myapp/bin/myapp console`
 starts in the shell
 
 Eshell > `registered().`
