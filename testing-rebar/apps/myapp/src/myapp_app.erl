@@ -5,11 +5,6 @@
 %% Application callbacks
 -export([start/2, stop/1]).
 
-%% eunit 
--ifdef(TEST).
--include_lib("eunit/include/eunit.hrl").
--endif.
-
 %% ===================================================================
 %% Application callbacks
 %% ===================================================================
@@ -19,13 +14,3 @@ start(_StartType, _StartArgs) ->
 
 stop(_State) ->
     ok.
-
-
-%% eunit
--ifdef(TEST).
-
-simple_test() ->
-    ok = application:start(myapp),
-    ?assertNot(undefined == whereis(myapp_sup)).
-
--endif.
