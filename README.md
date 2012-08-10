@@ -15,8 +15,8 @@ Erlang
 
 ####Applications
 
-Kitty Server - Erlang Processes
-PingPong - Erlang systems passing messages in the form of ping pong
-Messenger - Multiple Erlang Nodes passing messages
-MyApp - OTP with Eunit Setup
-Cowboy Examples - How to Use Cowboy
+- Kitty Server - Erlang Processes
+- PingPong - Erlang systems passing messages in the form of ping pong
+- Messenger - Multiple Erlang Nodes passing messages
+- MyApp - OTP with Eunit Setup
+- Cowboy Examples - How to Use Cowboy
