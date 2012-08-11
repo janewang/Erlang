@@ -8,15 +8,15 @@ first(0, Second_Node) ->
 
 first(N, Second_Node) ->
     {ok, [First_hand]} = io:fread("Enter rock, paper or scissors: ", "~s"),
-    {second, Second_Node} ! {first, [First_hand], self()},
+    {second, Second_Node} ! {first, [First_hand], self()},  % send first player's hand to second process
     receive
         {second, [Second_hand]} ->
             case [Second_hand] of
-                rock ->
+                ["rock"] ->
                     io:format("The other player played rock~n",[]);
-                paper ->
+                ["paper"] ->
                     io:format("The other player played paper~n", []);
-                scissors ->
+                ["scissors"] ->
                     io:format("The other player played scissors~n", [])
             end
     end,
@@ -30,15 +30,15 @@ second() ->
 	        io:format("Game over~n", []);
 	    {first, [First_hand], first_PID} ->
 	        case [First_hand] of 
-	            rock ->
+	            ["rock"] ->
 	                io:format("The other player played rock~n", []);
-	            paper ->
+	            ["paper"] ->
 	                io:format("The other player played paper~n", []);
-                scissors ->
+                ["scissors"] ->
                     io:format("The other player played scissors~n", [])
             end,
-        first_PID ! {second, [Second_hand]},
-        second()
+            first_PID ! {second, [Second_hand]},  % send 2nd players hand to the first process
+            second()
     end.
 
 start_Second_Node() ->
