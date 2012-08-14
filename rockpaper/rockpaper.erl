@@ -7,6 +7,7 @@ first(0, Second_Node) ->
     io:format("Game over~n",[]);
 
 first(N, Second_Node) ->
+    timer:sleep(100),
     {ok, [First_hand]} = io:fread("Enter rock, paper or scissors: ", "~s"),
     {second, Second_Node} ! {first, [First_hand], self()},  % send first player's hand to second process
     receive

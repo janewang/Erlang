@@ -22,3 +22,4 @@ Erlang
 - Testing Rebar - Standard rebar setup
 - Cowboy Examples - How to Use Cowboy
 - RockPaper - Making multiple node rock paper scissors
+- Exercises - Make Erlang do cool stuff
