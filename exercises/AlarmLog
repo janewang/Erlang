@@ -1,0 +1,3 @@
+1345,223225,531659,raise_alarm,10,cabinet_open
+1345,223332,703640,clear_alarm,10,cabinet_open
+1345,223383,794396,event,156,link_up
