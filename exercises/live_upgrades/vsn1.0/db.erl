@@ -23,5 +23,3 @@ read(Key, Db) ->
 delete(Key, Db) -> dict:erase(Key, Db).
 
 destroy(_Db)    -> ok.
-
-
