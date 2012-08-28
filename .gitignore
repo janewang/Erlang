@@ -1,2 +1,8 @@
 .DS_Store
 *.dump
+.eunit
+deps
+priv
+*.o
+*.beam
+*.plt
