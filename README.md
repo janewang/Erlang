@@ -24,6 +24,3 @@ Erlang
 - RockPaper - Making multiple node rock paper scissors
 - Exercises - Book exercises
 - Events - No-lock event handling
-=======
-======
->>>>>>> 24730a6b785095b5b0a4be9980934d8808b0a89c
